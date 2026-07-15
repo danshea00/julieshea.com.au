@@ -209,6 +209,7 @@ figure.artwork .work-statement {
 .project-card img {
   max-height: 340px;
   width: auto;
+  margin: 0 auto;
 }
 
 .project-card h2 {
