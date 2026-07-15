@@ -1,0 +1,265 @@
+/* Julie Anne Shea — site stylesheet */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #2a2a2a;
+  background: #fbfaf7;
+  line-height: 1.65;
+  font-size: 1.05rem;
+}
+
+.wrap {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Header + navigation */
+header {
+  padding: 2rem 0 1.25rem;
+  text-align: center;
+  border-bottom: 1px solid #e3e0d8;
+}
+
+header .site-name {
+  font-size: 1.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+header .site-name a {
+  color: #2a2a2a;
+  text-decoration: none;
+}
+
+nav {
+  margin-top: 0.9rem;
+}
+
+nav a {
+  color: #555;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  margin: 0 0.7rem;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  color: #a8551f;
+}
+
+/* Main content */
+main {
+  padding: 2.5rem 0 3rem;
+}
+
+main h1 {
+  font-weight: normal;
+  font-size: 1.7rem;
+  margin-bottom: 0.4rem;
+}
+
+main h2 {
+  font-weight: normal;
+  font-size: 1.3rem;
+  margin: 2.2rem 0 0.8rem;
+}
+
+main p {
+  margin-bottom: 1rem;
+}
+
+main a {
+  color: #a8551f;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 1.8rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Home */
+.hero {
+  text-align: center;
+}
+
+.hero img {
+  margin: 0 auto 1rem;
+  max-height: 70vh;
+  width: auto;
+}
+
+.hero .caption {
+  color: #888;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+/* Gallery figures */
+figure.artwork {
+  margin: 2.5rem 0;
+}
+
+figure.artwork img {
+  margin: 0 auto;
+  max-height: 80vh;
+  width: auto;
+}
+
+figure.artwork figcaption {
+  margin-top: 0.7rem;
+  text-align: center;
+}
+
+figure.artwork .work-title {
+  font-style: italic;
+}
+
+figure.artwork .work-details {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+figure.artwork .work-statement {
+  max-width: 620px;
+  margin: 0.5rem auto 0;
+  font-size: 0.95rem;
+  color: #444;
+  text-align: left;
+}
+
+/* Groups of process/artwork images within a text section */
+.work-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.6rem 0;
+}
+
+.work-images img {
+  max-height: 330px;
+  width: auto;
+  max-width: 100%;
+}
+
+.work-images img.tall {
+  max-height: 460px;
+}
+
+/* Project cards on projects index */
+.project-card {
+  margin: 2.2rem 0;
+}
+
+.project-card img {
+  max-height: 340px;
+  width: auto;
+}
+
+.project-card h2 {
+  margin-top: 0.8rem;
+}
+
+.project-card h2 a {
+  text-decoration: none;
+}
+
+/* Statement block quotes */
+blockquote {
+  margin: 1.5rem 1.5rem 1.5rem 2rem;
+  font-style: italic;
+  color: #555;
+}
+
+/* About */
+.about-photo {
+  float: right;
+  width: 260px;
+  margin: 0 0 1rem 1.5rem;
+}
+
+/* CV lists */
+.cv-section dl {
+  margin-bottom: 1.5rem;
+}
+
+.cv-section dt {
+  float: left;
+  clear: left;
+  width: 5.5rem;
+  color: #777;
+}
+
+.cv-section dd {
+  margin-left: 6rem;
+  margin-bottom: 0.25rem;
+}
+
+/* References / notes */
+.notes {
+  font-size: 0.88rem;
+  color: #666;
+  border-top: 1px solid #e3e0d8;
+  margin-top: 3rem;
+  padding-top: 1.2rem;
+}
+
+.notes p {
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid #e3e0d8;
+  padding: 1.5rem 0 2.5rem;
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #777;
+  margin: 0 0.6rem;
+}
+
+footer a:hover {
+  color: #a8551f;
+}
+
+@media (max-width: 600px) {
+  .about-photo {
+    float: none;
+    margin: 0 auto 1.2rem;
+  }
+
+  .cv-section dt {
+    float: none;
+    width: auto;
+  }
+
+  .cv-section dd {
+    margin-left: 1.2rem;
+    margin-bottom: 0.4rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.2rem 0.5rem;
+  }
+}
